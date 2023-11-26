@@ -12,8 +12,6 @@ class Solution:
             cur_node, cur_depth = stack.pop()
             if cur_node:
                 depth = max(depth, cur_depth)
-                stack.append((cur_node.left,cur_depth+1))
-                stack.append((cur_node.right,cur_depth+1))
+                stack.append((cur_node.left, cur_depth+1))
+                stack.append((cur_node.right, cur_depth+1))
         return depth
-
-        
